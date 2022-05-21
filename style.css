@@ -1,0 +1,151 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.span-pass {
+    color: #fff;
+    padding-top: 10px;
+}
+
+i {
+    color: red;
+}
+
+.space {
+    background-image: url("img/space.png");
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.planet-area {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 80vh;
+    align-self: flex-end;
+}
+
+.planet {
+    position: absolute;
+    width: 300px;
+    bottom: -2px;
+    left: -2px;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 116px;
+    left: 118px;
+    transform: rotate(25deg);
+    width: 200px;
+}
+
+.control-panel {
+    width: 390px;
+    min-height: 310px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.36);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, yellow 25px, yellow 40px);
+
+}
+
+.control-panel__inner {
+    background-color: #252424;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    min-height: 200px;
+}
+
+.password-form {
+    margin: 0 auto;
+}
+
+input[type="range"] {
+    width: 80px;
+    height: 20px;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 20px 25px;
+}
+
+.checkboxes, .ranges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.button-launch {
+    margin-top: 40px;
+    color: #fff;
+    background-color: red;
+    width: 70px;
+    height: 50px;
+    align-self: center;
+    border-color: #fff;
+    border-radius: 25px;
+}
+
+.levers {
+    display: flex;
+    padding-top: 50px;
+}
+
+.check-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pass {
+    background-color: #706e6e;
+    color: red;
+    border-color: yellow;
+    outline-color: yellow;
+    width: 85%;
+    border-radius: 5px;
+    height: 25px;
+}
+
+#pass::placeholder {
+    color: #000;
+    font-weight: bold;
+}
+
+#pass:focus-visible {
+    outline-color: yellow;
+}
+
+.check-pass {
+    background-color: yellow;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+}
